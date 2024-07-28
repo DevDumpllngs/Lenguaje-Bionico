@@ -35,12 +35,6 @@ Puedes contribuir al proyecto de varias maneras:
 * **Informando errores**: Puedes informar errores y problemas técnicos a través de nuestra plataforma de seguimiento de errores. 
 * **Sugeriendo nuevas características**: Puedes sugerir nuevas características y mejoras al proyecto a través de mensajes.
 
-## Recursos Adicionales
-
-* **Documentación oficial**: Puedes encontrar la documentación oficial del proyecto en [Enlace a la documentación oficial](https://example.com/docs)
-* **Tutoriales en línea**: Puedes encontrar tutoriales en línea y recursos educativos en [Enlace a los tutoriales en línea](https://example.com/tutorials)
-* **Preguntas frecuentes**: Puedes encontrar respuestas a preguntas frecuentes en [Enlace a las preguntas frecuentes](https://example.com/faq)
-
 ## Licencia y Créditos
 
 El proyecto está licenciado bajo la licencia MIT.
