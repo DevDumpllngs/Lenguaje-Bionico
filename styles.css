@@ -1,0 +1,322 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Caudex', serif; /* Fuente Caudex */
+    background-color: #f4f4f9; /* Color de fondo */
+    margin: 0;
+}
+
+/* Barra de menú */
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuir espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+    background-color: white; /* Color de fondo blanco */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* Línea inferior */
+}
+
+/* Estilo del logo */
+.logo img {
+    height: 70px; /* Altura del logo */
+    margin-left: 40px;
+}
+
+/* Estilo del menú */
+.menu ul {
+    list-style: none; /* Quitar viñetas */
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #333; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 16px;
+}
+
+/* Botón de portafolio */
+.portfolio-button a {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 17px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    width: 7em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    padding: 10px;
+  }
+  
+  .portfolio-button a:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  }
+  
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  .portfolio-button a:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+  }
+  
+  .portfolio-button a:hover::before {
+    filter: blur(20px);
+  }
+  
+  .portfolio-button a:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  }
+
+/* Contenedor principal */
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el texto y la imagen */
+    align-items: flex-start; /* Alinear al inicio */
+    padding: 40px 20px; /* Espaciado interno */
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto; /* Centrar el contenedor */
+}
+
+/* Estilo del contenido principal */
+.content {
+    flex: 2;
+    margin-right: 40px; /* Separar el texto de la imagen */
+}
+
+h1 {
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(to right, blue, magenta); /* Gradiente de color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 700px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+button {
+    color: #000000;
+    border: 2px solid rgb(216, 2, 134);
+    border-radius: 10px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #055f9b;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #D80286;
+}
+
+button:hover {
+    color: #f4f4f9;
+    box-shadow: inset 400px 0 0 0 #D80286;
+}
+
+#outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
+
+/* Estilo de la imagen */
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+    transform: scaleX(-1);
+}
+
+
+.convert-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.upload-area, .result-area {
+    flex: 1;
+    margin: 0 20px;
+    font-family: ar;
+}
+
+.titulo-resultado {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+textarea {
+    width: 800px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.convert {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#outputText {
+    font-family: 'Arial';
+    white-space: pre-wrap;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 200px;
+    max-width: 800px;
+    margin-right: 50px;
+}
+
+/* Espacio en blanco al final de la página */
+.bottom-space {
+    height: 100px;
+}
+
+.info-section {
+    margin-left: 450px;
+}
+
+.que-es {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: -120px;
+}
+
+.texto-que-es{
+    color: #333;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: -120px;
+    text-align: justify;
+}
+
+.casos {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-left: 900px;
+}
+
+.lista-casos{
+    color: #333;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 400px;
+    margin-right: 150px;
+    text-align: justify;
+}
+
+.beneficios{
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: justify;
+    margin-left: -120px;
+}
+
+.lista-beneficios{
+    color: #333;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: -120px;
+    text-align: justify;
+}
+
+.prueba {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-left: 773px;
+}
+
+.texto-prueba{
+    color: #333;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 730px;
+
+}

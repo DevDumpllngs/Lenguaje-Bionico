@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Lectura Biónica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente Caudex -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <!-- Barra de menú -->
+    <header>
+        <div class="logo">
+            <img src="Logo-Dump.png" alt="Logo"> <!-- Logo de la página -->
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Convertidor</a></li>
+                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="portfolio-button">
+            <a href="#0" class="bttn-dark">Portfolio</a>
+          </div>
+    </header>
+    
+    <main>
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <div class="content">
+            <h1>Lectura Biónica: Mejora tu Experiencia de Lectura</h1> <!-- Título principal -->
+            <p>Transforma tu forma de leer con nuestra herramienta innovadora. Sube tu texto o archivo y velo convertirse en un formato más fácil y rápido de leer. La lectura biónica revoluciona la manera en que absorbemos información, permitiendo una comprensión más rápida y eficiente. ¡Pruébalo ahora!</p>
+            <button>Convertir texto</button> <!-- Botón de acción -->
+        </div>
+        <div class="image">
+            <img src="robot.jpeg" alt="Imagen de un robot"> <!-- Imagen a la derecha -->
+        </div>
+    </div>
+    
+      <!-- Texto general -->
+    <section class="info-section">
+        <h1 class="que-es">¿Qué es la Lectura Biónica?</h1>
+        <p class="texto-que-es">
+          La lectura biónica es una técnica de presentación de texto que destaca las primeras partes de las palabras en negrita, 
+          ayudando a los lectores a enfocar y entender más rápidamente el contenido. Esta técnica puede ser especialmente útil 
+          para personas con dislexia, problemas de atención o simplemente aquellos que desean mejorar su velocidad y comprensión lectora.
+        </p>
+        <h1 class="casos">¿En qué Casos se Utiliza?</h1>
+        <ul class="lista-casos">
+          <li>Educación: Facilita la lectura y comprensión de textos académicos para estudiantes.</li>
+          <li>Profesionales: Ayuda a profesionales a leer informes y documentos largos de manera más eficiente.</li>
+          <li>Personas con Dislexia: Mejora la legibilidad del texto, haciendo la lectura menos fatigante.</li>
+          <li>Lectura Recreativa: Permite disfrutar de libros y artículos sin perder el hilo de la lectura.</li>
+        </ul>
+        <h1 class="beneficios">Beneficios de la Lectura Biónica</h1>
+        <ul class="lista-beneficios">
+          <li>Aumenta la velocidad de lectura.</li>
+          <li>Mejora la comprensión y retención de la información.</li>
+          <li>Reduce la fatiga visual durante la lectura prolongada.</li>
+          <li>Facilita la lectura para personas con dislexia y otros trastornos de lectura.</li>
+        </ul>
+        <h1 class="prueba">¡Prueba la Lectura Biónica Ahora!</h1>
+        <p class="texto-prueba">
+          Experimenta los beneficios de la lectura biónica subiendo tu texto o documento en nuestra página principal. 
+          Verás cómo mejora tu capacidad para procesar información de manera rápida y eficiente.
+        </p>
+    </section>
+
+    <section class="convert-section">
+        <div class="upload-area">
+            <h2>Sube tu texto</h2>
+            <textarea id="inputText" placeholder="Escribe o pega tu texto aquí..."></textarea>
+            <button class="convert"onclick="convertToBionic()">Convertir a lectura biónica</button>
+        </div>
+        <div class="result-area">
+            <h2 class="titulo-resultado">Resultado en Lectura Biónica</h2>
+            <div id="outputText"></div>
+        </div>
+    </main>
+        <div class="bottom-space"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.21.1/docxtemplater.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/file-saver/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
